@@ -3,11 +3,6 @@ pragma solidity >=0.4.22 <0.9.0;
 
 contract todo {
 
-  //using SafeMath for uint256;
-
-  // constructor() public {
-  // }
-
   struct Todo {
     string contents;
     bool is_opened;
@@ -15,9 +10,6 @@ contract todo {
   }
 
   Todo[] public todos;
-
-  // event
-  // 更新があったら通知する
 
   // id と address の紐付け
   mapping (uint => address) public todoToOwner;
